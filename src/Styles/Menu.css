@@ -1,0 +1,34 @@
+#main-container-menu-background {
+    background: url("../images/image-background.jpg") no-repeat;
+    background-position: 100% 30%;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+
+#header {
+    margin-top: -130px;
+    margin-left: 300px;
+}
+
+#main-containers-produtos {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    justify-content: space-around;
+    width: 70%;
+    margin: 30px auto;
+}
+
+#main-containers-produtos img {
+    width: 100%;
+}
+
+#main-containers-produtos div {
+    width: 90%;
+    margin: 20px 0;
+}
+
+#main-containers-produtos div h2 {
+    color: red;
+    text-shadow: 1px 1px 3px orange;
+}

@@ -1,0 +1,31 @@
+#header-content {
+    padding-top: 30px;
+}
+
+#menu-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.menu-list-item {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    border: 1px solid orange;
+}
+
+.menu-list-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-list-item:hover {
+    transition: 0.4s;
+    box-shadow: 3px 3px 10px rgb(255, 166, 0);
+}

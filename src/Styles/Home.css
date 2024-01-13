@@ -1,0 +1,349 @@
+#main-prim-container {
+    background: url("../images/image-background.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#main-prim-container h1 {
+    color: orange;
+    /* text-shadow: 1px 1px 10px rgb(244, 175, 45); */
+    text-shadow: 1px 1px 10px black;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    padding-top: 100px;
+}
+
+#main-prim-container h3 {
+    text-align: center;
+    color: red;
+    /* text-shadow: 1px 1px 10px rgb(255, 166, 0); */
+    text-shadow: 1px 1px 10px black;
+}
+
+#main-container-seg h1,
+#main-container-seg p {
+    text-align: center;
+}
+
+#main-container-seg h1 {
+    margin-top: 60px;
+}
+
+#main-container-seg p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+#main-container-ter {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 400px;
+    color: orange;
+}
+
+#main-container-ter img {
+    margin-left: 70px;
+    /* margin-bottom: 40px; */
+}
+
+#main-container-ter img:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    width: 520px;
+}
+
+.text-style-one {
+    font-weight: 500;
+}
+
+.text-style-one span {
+    font-weight: 700;
+}
+
+.main-containers-experiencia {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-containers-experiencia div {
+    width: 100%;
+    height: 250px;
+    padding-top: 40px;
+    background-color: rgb(244, 124, 77);
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.main-containers-experiencia div svg {
+    margin: 10px;
+}
+
+.main-containers-experiencia div h2 {
+    margin-bottom: 10px;
+}
+
+.main-containers-experiencia div p {
+    text-align: center;
+    width: 65%;
+}
+
+.main-containers-experiencia div:hover {
+    transition: 0.4s;
+    background-color: black;
+    cursor: pointer;
+}
+
+#main-home-button-visu-cardapio {
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 35px;
+    margin: auto;
+    margin-top: 50px;
+    cursor: pointer;
+    background-color: orange;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+#main-home-button-visu-cardapio:hover {
+    transition: 0.4s;
+    margin-top: 55px;
+    font-size: 16.5px;
+}
+
+#main-container-image-local-sobre figure {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 8fr 7fr;
+    width: 70%;
+    margin: 80px auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+#main-container-image-local-sobre figure img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#main-container-image-local-sobre figure figcaption {
+    margin: 30px;
+}
+
+#main-container-image-local-sobre figure figcaption button {
+    background-color: orange;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+    height: 40px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#main-container-image-local-sobre figure figcaption button:hover {
+    transition: 0.4s;
+    width: 70%;
+}
+
+@media screen and (max-width: 1450px) {
+    #main-container-image-local-sobre figure {
+        width: 1000px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    #main-container-image-local-sobre figure {
+        width: 70%;
+        height: 100%;
+        padding-bottom: 30px;
+        display: block;
+    }
+
+    #main-container-image-local-sobre figure figcaption p {
+        margin-bottom: 30px;
+    }
+
+    .main-containers-experiencia {
+        width: 90%;
+    }
+
+    .main-containers-experiencia div {
+        height: 270px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    .main-containers-experiencia {
+        width: 100%;
+    }
+
+    #main-container-ter {
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #main-container-ter img {
+        margin-left: 0px;
+        /* margin-bottom: 40px; */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #main-prim-container h1 {
+        font-size: 38px;
+    }
+
+    #main-prim-container h3 {
+        font-size: 16px;
+    }
+
+    #main-container-ter {
+        height: 100%;
+        padding: 40px 0;
+    }
+
+    #main-container-ter h1 {
+        font-size: 25px;
+    }
+
+    #main-container-ter img {
+        margin-left: 0px;
+        width: 240px;
+        /* margin-bottom: 40px; */
+    }
+
+    .main-containers-experiencia div {
+        height: 220px;
+    }
+
+    .main-containers-experiencia h2 {
+        font-size: 19px;
+    }
+
+    .main-containers-experiencia p {
+        font-size: 15px;
+    }
+
+    .main-containers-experiencia div p {
+        text-align: center;
+        width: 90%;
+    }
+
+    .main-containers-experiencia div svg {
+        margin: 0px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .main-containers-experiencia {
+        display: block;
+        height: 100%;
+    }
+
+    .main-containers-experiencia div {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    #main-container-seg P {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #main-container-image-local-sobre figure {
+        width: 90%;
+        height: 100%;
+        padding-bottom: 30px;
+        display: block;
+    }
+
+    .main-containers-experiencia p {
+        font-size: 16px;
+    }
+
+    .main-containers-experiencia div p {
+        width: 80% !important;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    #main-prim-container h1 {
+        font-size: 30px;
+    }
+
+    #main-prim-container h3 {
+        font-size: 16px;
+        width: 70%;
+        margin: auto;
+    }
+
+    #main-container-ter {
+        display: block;
+        margin: auto;
+    }
+
+    #main-container-ter img {
+        margin: auto;
+        width: 280px;
+        display: flex;
+    }
+
+    #main-container-ter img:hover {
+        width: 290px;
+    }
+
+    #main-container-ter h1 {
+        font-size: 24px;
+    }
+
+    .main-containers-experiencia div {
+        width: 80%;
+        height: 220px;
+        margin: 20px auto;
+    }
+
+    .main-containers-experiencia p {
+        font-size: 17px;
+    }
+
+    /* 
+    .main-containers-experiencia svg {
+        font-size: 10px;
+    } */
+}
