@@ -1,7 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/storage';
 import 'firebase/database';
-import 'firebase/auth';
+// import 'firebase/auth';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBeDW4AqqzpiXxOr5VoA4EQIGYqlsFctwI",
@@ -16,6 +16,7 @@ firebase.initializeApp(firebaseConfig);
 
 const storage = firebase.storage();
 const database = firebase.database(); // Chame o método diretamente em 'firebase'
-const auth = firebase.auth(); // Chame o método diretamente em 'firebase'
+// const auth = firebase.auth(); // Chame o método diretamente em 'firebase'
 
-export { storage, database, auth, firebase as default };
+// export { storage, database, auth, firebase as default };
+export { storage, database, firebase as default };
