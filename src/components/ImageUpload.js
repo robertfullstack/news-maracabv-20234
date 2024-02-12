@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { storage, database } from "../services/firebaseConfig";
 
-import "../Styles/Admin.css";
+import "../services/admin/Admin.css";
 
 const UploadPage = () => {
     const [image, setImage] = useState(null);
@@ -58,14 +58,20 @@ const UploadPage = () => {
     };
 
     return (
-        <div>
-            <div>
-                <form style={{ width: '60%' }}>
-                    <label>Imagem Sobre: </label>
-                    <input type="file" onChange={handleChange} />
-                    <progress value={progress} style={{ width: '100%' }} max="100" />
-                    <button onClick={handleUpload}>Upload</button>
-                </form>
+        <div className="container">
+            <div className="row justify-content-center mt-5">
+                <div className="col-md-6">
+                    <form>
+                        <div className="mb-3">
+                            <label htmlFor="imageUpload" className="form-label">Imagem Sobre:</label>
+                            <input type="file" className="form-control" id="imageUpload" onChange={handleChange} />
+                        </div>
+                        <div className="mb-3">
+                            <progress value={progress} className="form-control" max="100" />
+                        </div>
+                        <button className="btn btn-primary" onClick={handleUpload}>Upload</button>
+                    </form>
+                </div>
             </div>
         </div>
     );

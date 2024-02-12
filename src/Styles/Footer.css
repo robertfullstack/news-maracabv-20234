@@ -1,0 +1,32 @@
+/* Footer.css */
+
+.footer-container {
+    background-color: #333;
+    /* Cor de fundo escura */
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    /* Ajuste conforme necessário */
+    color: #fff;
+    /* Cor do texto branca */
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    color: #fff;
+    /* Cor do título branca */
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #ccc;
+    /* Cor do texto cinza claro */
+}
+
+.copyright p {
+    color: #aaa;
+    /* Cor do texto cinza mais claro */
+}

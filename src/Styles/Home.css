@@ -21,6 +21,11 @@
     text-shadow: 1px 1px 10px black;
 }
 
+.link-none-style {
+    text-decoration: none;
+    color: black;
+}
+
 #main-container-seg h1,
 #main-container-seg p {
     text-align: center;
@@ -161,16 +166,167 @@ body {
     margin-top: 10px;
     color: white;
     font-weight: 600;
-    height: 40px;
+    height: 50px;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 5px;
+}
+
+#main-container-image-local-sobre figure button a {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+
 }
 
 #main-container-image-local-sobre figure figcaption button:hover {
     transition: 0.4s;
     width: 70%;
 }
+
+#main-container-quar {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    color: #ff6600;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+#main-container-quar div img {
+    width: 100%;
+    cursor: pointer;
+}
+
+#main-container-quar div img:hover {
+    margin-top: -5px;
+    transition: 0.4s;
+}
+
+#main-contaier-depoimento {
+    width: 70%;
+    margin: 40px auto;
+}
+
+#main-contaier-depoimento h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.763);
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+#main-contaier-depoimento h3 {
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+#main-contaier-depoimento div {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#main-contaier-depoimento img {
+    border-radius: 100%;
+    width: 100px;
+}
+
+#main-contaier-depoimento p {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+#main-container-pedido-hoje {
+    background: url('../images/image-local-mara-baixar-opacidade.jpg') center center;
+    background-size: 100%;
+    height: 70vh;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 130px;
+    text-align: center;
+}
+
+
+#main-container-pedido-hoje h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#main-container-pedido-hoje p {
+    width: 70%;
+    margin: 20px auto;
+}
+
+
+#main-container-pedido-hoje button {
+    background-color: rgba(255, 0, 0, 0);
+    border: 3px solid white;
+    /* padding: 23px 160px; */
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+    display: flex;
+    width: 40%;
+    height: 13%;
+    margin: auto;
+}
+
+#main-container-pedido-hoje button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+#main-container-pedido-hoje button a:hover {
+    transition: 0.4s;
+    background-color: white;
+    color: black;
+}
+
+#main-container-pedido-hoje::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    animation: slideBackground 20s linear infinite;
+}
+
+@keyframes slideBackground {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+#main-container-pedido-hoje h1,
+#main-container-pedido-hoje p,
+#main-container-pedido-hoje button {
+    position: relative;
+    z-index: 1;
+}
+
 
 @media screen and (max-width: 1450px) {
     #main-container-image-local-sobre figure {
@@ -281,6 +437,27 @@ body {
     #main-container-seg P {
         width: 90%;
     }
+
+    #main-container-quar {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+
+    #main-container-nossas-especialidades div {
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 25px;
+    }
+
+    #main-container-nossas-especialidades figure img {
+        width: 60%;
+        display: flex;
+        margin: auto;
+    }
+
+
 }
 
 @media screen and (max-width: 800px) {
@@ -346,4 +523,219 @@ body {
     .main-containers-experiencia svg {
         font-size: 10px;
     } */
+}
+
+#main-container-diferencias {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#main-container-diferencias figcaption {
+    width: 300px;
+    position: absolute;
+
+}
+
+#main-container-diferencias img {
+    margin: 70px auto;
+    display: flex;
+    width: 310px;
+}
+
+#main-container-nossas-especialidades div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-container-nossas-especialidades {
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+#main-container-nossas-especialidades figure {
+    /* width: 300px; */
+    margin: 2%;
+}
+
+#main-container-nossas-especialidades img {
+    /* border-radius: 50%; */
+    width: 100%;
+    height: 100%;
+}
+
+
+#main-container-nossas-especialidades figcaption {
+    text-transform: uppercase;
+}
+
+#main-container-nossas-especialidades h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(134, 14, 14);
+    font-weight: 900;
+    font-size: 26px;
+}
+
+#main-container-figcation-especialidades {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    text-align: center;
+    margin: auto;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1400px) {
+    #main-container-diferencias .primeiro-figcaption {
+        left: 26%;
+    }
+
+    #main-container-diferencias .segundo-figcaption {
+        right: 17%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #main-container-diferencias .primeiro-figcaption {
+        left: 10%;
+    }
+
+    #main-container-diferencias .segundo-figcaption {
+        right: 6%;
+    }
+
+    #main-container-diferencias .setas-primeiro-figcaption {
+        margin-left: 210px;
+    }
+
+    #main-container-diferencias .setas-segundo-figcaption {
+        margin-left: -50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #main-container-diferencias .setas-segundo-figcaption {
+        margin-left: -20px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    #main-container-nossas-especialidades h2 {
+        font-size: 19px;
+        margin-top: 10px;
+    }
+
+    #main-container-diferencias {
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #main-container-diferencias img {
+        width: 40%;
+    }
+
+    #main-container-diferencias figcaption {
+        width: 90%;
+        position: relative;
+
+    }
+
+    #main-container-diferencias .setas-primeiro-figcaption {
+        margin-left: 0px;
+    }
+
+    #main-container-diferencias .primeiro-figcaption {
+        right: 0%;
+        left: 0%;
+        width: 90%;
+        margin: auto;
+    }
+
+    #main-container-diferencias .segundo-figcaption {
+        right: 0%;
+        width: 90%;
+        margin: auto;
+    }
+
+    #main-container-diferencias .setas-primeiro-figcaption,
+    #main-container-diferencias .setas-segundo-figcaption {
+        display: none;
+    }
+
+    #main-container-diferencias .segundo-figcaption h2::before,
+    #main-container-diferencias .primeiro-figcaption h2::before {
+        content: '- ';
+    }
+
+
+    #main-container-pedido-hoje {
+        background-size: cover;
+        height: 100%;
+        padding-bottom: 120px;
+    }
+
+
+}
+
+.primeiro-figcaption {
+    left: 27%;
+}
+
+.setas-primeiro-figcaption {
+    margin-left: 110px;
+}
+
+.segundo-figcaption {
+    right: 20%;
+}
+
+.setas-segundo-figcaption {
+    margin-left: -20px;
+}
+
+@media screen and (max-width:650px) {
+    #main-container-pedido-hoje h1 {
+        font-size: 34px;
+    }
+
+    #main-container-pedido-hoje {
+        font-size: 17px;
+    }
+
+    #main-container-pedido-hoje p {
+        width: 90%;
+    }
+
+    #main-container-pedido-hoje button {
+        width: 70%;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #main-container-nossas-especialidades div {
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 25px;
+    }
+
+    #main-container-nossas-especialidades div figure {
+        margin-top: 30px;
+    }
+
+    #main-container-nossas-especialidades figure img {
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
 }
