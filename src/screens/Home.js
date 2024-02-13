@@ -117,7 +117,7 @@ const HomePage = () => {
                 <h1 style={{ textAlign: 'center' }}>QUALIDADE E EXELENCIA <br /> EM UM SÓ LUGAR!</h1>
                 <img src={imageContainerTer} width={500} />
             </div>
-            <h1 style={{ textAlign: 'center' }}>VARIEDADES</h1>
+            <h1 className="container-variedades">VARIEDADES</h1>
             <div id="main-container-quar" style={{ marginBottom: '60px' }}>
                 <div>
                     <h2>Fritos</h2>
