@@ -36,7 +36,6 @@
 }
 
 .text-h3-products span {
-    /* color: rgb(228, 151, 8); */
     color: #e9740e;
     text-shadow: 1px 1px 0.1px whitesmoke;
 }
@@ -62,4 +61,28 @@
 .list-detalhes-produtos {
     list-style: none;
     margin-top: -10px;
+}
+
+@media screen and (max-width: 500px) {
+    #main-containers-produtos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-template-columns: 10fr;
+        width: 100%;
+        margin: auto;
+    }
+
+    #main-containers-produtos div {
+        margin: 40px auto;
+    }
+
+
+    #main-containers-produtos img {
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+
+
 }
