@@ -8,6 +8,13 @@
     list-style: none;
 }
 
+@media screen and (max-width: 500px) {
+
+    #menu-list {
+        padding-left: 0px;
+    }
+}
+
 .menu-list-item {
     width: 120px;
     height: 30px;

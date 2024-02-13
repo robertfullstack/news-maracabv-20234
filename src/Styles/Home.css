@@ -739,3 +739,28 @@ body {
         margin: auto;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #main-prim-container h1 {
+        margin-top: 50px;
+    }
+
+    #main-prim-container {
+        padding-bottom: -20px;
+    }
+
+    #main-container-pedido-hoje h1 {
+        font-size: 26px;
+    }
+
+    #main-container-pedido-hoje p {
+        font-size: 15px;
+    }
+
+    #main-container-pedido-hoje button {
+        width: 70%;
+        height: 60px;
+        font-size: 20px;
+    }
+
+}
