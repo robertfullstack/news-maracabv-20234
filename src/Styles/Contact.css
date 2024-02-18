@@ -4,14 +4,14 @@ iframe {
     width: 80%;
 }
 
-h1 {
+#h1-contact {
     text-align: center;
     letter-spacing: 2px;
     font-weight: 700;
     margin: 30px 0;
 }
 
-button {
+#button-contact {
     width: 80%;
     height: 40px;
     background-color: green;
@@ -21,7 +21,7 @@ button {
     align-items: center;
 }
 
-button a {
+#button-contact a {
     text-decoration: none;
     color: white;
     font-weight: 600;
@@ -36,14 +36,14 @@ button a {
     height: 220px;
 }
 
-img {
+#image-contact {
     width: 55%;
     display: flex;
     margin: 30px auto;
 }
 
 @media screen and (max-width: 600px) {
-    img {
+    #image-contact {
         width: 99%;
     }
 
