@@ -86,3 +86,34 @@
 
 
 }
+
+#main-container-menu-background div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#main-container-menu-background div {
+    margin-right: 100px;
+}
+
+@media screen and (max-width:1000px) {
+    #main-container-menu-background {
+        height: 150px;
+    }
+
+    #main-container-menu-background div {
+        display: flex;
+        padding-top: 30px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+
+    #imageLogo-menu {
+        display: none;
+    }
+
+}

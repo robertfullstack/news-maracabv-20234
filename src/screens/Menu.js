@@ -30,10 +30,10 @@ export default function Menu() {
         <div>
             <div id="main-container-menu-background">
                 <div>
-                    <img src={imageLogo} width={200} style={{ marginLeft: '170px' }} />
-                    <div id="header">
-                        <Header />
-                    </div>
+                    <img src={imageLogo} id="imageLogo-menu" width={200} style={{ marginLeft: '170px' }} />
+
+                    <Header />
+
                 </div>
             </div>
             <h1 id="text-h1-cardapio">CARDÁPIO ATUALIZADO</h1>
